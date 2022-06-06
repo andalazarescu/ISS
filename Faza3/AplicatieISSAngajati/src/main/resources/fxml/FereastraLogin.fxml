@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="374.0" style="-fx-background-color: #C4F7A1;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="47.0" layoutY="65.0" prefHeight="60.0" prefWidth="279.0" text="Firma ICSulescu" textFill="#17183b">
+         <font>
+            <Font name="Times New Roman Bold" size="37.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="RadioAngajat" layoutX="74.0" layoutY="136.0" mnemonicParsing="false" text="Angajat" textFill="#17183b">
+         <font>
+            <Font name="Times New Roman Italic" size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Category" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="RadioSef" layoutX="217.0" layoutY="136.0" mnemonicParsing="false" text="Șef" textFill="#17183b" toggleGroup="$Category">
+         <font>
+            <Font name="Times New Roman Italic" size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="usernameTextField" layoutX="112.0" layoutY="200.0" onKeyPressed="#resetLabels" promptText="Username" style="-fx-background-color: #c9daea;" />
+      <PasswordField fx:id="passwordField" layoutX="112.0" layoutY="242.0" onKeyPressed="#resetLabels" promptText="Password" style="-fx-background-color: #c9daea;" />
+      <Button fx:id="loginButton" layoutX="151.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleLogin" style="-fx-background-color: #17183B;" text="Logare" textFill="#c9daea">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelUsernameIncorrect" layoutX="116.0" layoutY="225.0" prefHeight="17.0" prefWidth="149.0" text="Username incorrect" textFill="#17183b">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPasswordIncorrect" layoutX="115.0" layoutY="270.0" prefHeight="17.0" prefWidth="149.0" text="Password incorrect" textFill="#17183b">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="24.0" layoutY="90.0" />
+      <TextField layoutX="24.0" layoutY="143.0" />
+      <TextField layoutX="185.0" layoutY="90.0" />
+      <TextField layoutX="185.0" layoutY="143.0" />
+      <Label layoutX="103.0" layoutY="21.0" prefHeight="21.0" prefWidth="179.0" text="Creare cont angajat">
+         <font>
+            <Font name="Yu Gothic Regular" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="68.0" prefHeight="17.0" prefWidth="68.0" text="Prenume" />
+      <Label layoutX="24.0" layoutY="68.0" prefHeight="17.0" prefWidth="68.0" text="Nume" />
+      <Label layoutX="24.0" layoutY="122.0" prefHeight="17.0" prefWidth="68.0" text="Username" />
+      <Label layoutX="185.0" layoutY="122.0" prefHeight="17.0" prefWidth="68.0" text="Parola" />
+      <Button layoutX="152.0" layoutY="182.0" mnemonicParsing="false" text="Adauga" />
+   </children>
+</AnchorPane>
